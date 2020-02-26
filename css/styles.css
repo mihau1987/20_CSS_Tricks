@@ -151,9 +151,9 @@ header h1 {
 
 p.shortened {
   display: -webkit-box;
--webkit-line-clamp: 3;
--webkit-box-orient: vertical;
-overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /*first-letter*/
@@ -286,6 +286,21 @@ ol.numbered-list li {
   font-family: 'Darker Grotesque', sans-serif;
   letter-spacing: 1px;
   font-weight: 600;
+  counter-increment: listelement;
+}
+
+ol.numbered-list li:before {
+  content: counter(listelement);
+  border-radius: 50%;
+  background: #f3b70f;
+  color: #fff;
+  font-size: 25px;
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  left: -40px;
+  line-height: 45px;
+  text-align: center;
 }
 
 ol.numbered-list li:last-child {
