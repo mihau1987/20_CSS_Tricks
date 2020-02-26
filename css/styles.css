@@ -289,6 +289,8 @@ ol.numbered-list li {
   counter-increment: listelement;
 }
 
+/*styling numbers in the numbered list*/
+
 ol.numbered-list li:before {
   content: counter(listelement);
   border-radius: 50%;
@@ -307,9 +309,11 @@ ol.numbered-list li:last-child {
   margin-bottom: 50px;
 }
 
-/*styling numbers in the numbered list*/
-
-ol.numbered-list > li:before {}
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 .list {
   margin-bottom: 20px;
