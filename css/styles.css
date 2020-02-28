@@ -351,6 +351,8 @@ ol.numbered-list li:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: conic-gradient(rgb(255, 132, 45) 0% 25%, rgb(166, 195, 209) 25% 56%, #ffb50d 56% 100%);
+  border-radius: 50%
 }
 
 .piechart h2 {
