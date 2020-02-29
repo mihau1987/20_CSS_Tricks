@@ -348,7 +348,11 @@ ol.numbered-list li:last-child {
 
 /*object fit class for the images*/
 
-.object-fit {}
+.object-fit {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
 
 /*piechart graph*/
 
