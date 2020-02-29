@@ -382,11 +382,17 @@ ol.numbered-list li:last-child {
   align-items: flex-start;
 }
 
-/*sibling combinator*/
+/*adjacent sibling combinator*/
 
 .chart-legend + p {
   margin-top: 20px;
   max-width: 300px;
+}
+
+/*adjacent sibling combinator*/
+
+.chart-legend ~ p {
+  line-height: 200%;
 }
 
 span.twitter,
